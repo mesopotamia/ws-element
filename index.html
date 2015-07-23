@@ -5,6 +5,19 @@
     <link rel="import" href="src/ws-element.html">
   </head>
   <body>
-    <ws-element></ws-element>
+    <ws-element url="ws://localhost:9999" protocol="echo-protocol"></ws-element>
+    <script>
+        var wsElement = document.querySelector("ws-element");
+        wsElement.addEventListener('onerror', function (error){
+            throw new Error(error);
+        });
+        wsElement.addEventListener('onopen', function () {
+            wsElement.send('Hello from client');
+        });
+        wsElement.addEventListener('onmessage', function (message) {
+            // hello from the server
+            console.log(message.detail);
+        });
+    </script>
   </body>
 </html>

@@ -4,7 +4,7 @@
   "authors": [
     "Marwan Aziz <aziz.marwan@gmail.com>"
   ],
-  "description": "Polymer custom element that facilitates websockets",
+  "description": "Polymer custom element that facilitates communication via browser-native websockets",
   "license": "MIT",
   "ignore": [
     "**/.*",
