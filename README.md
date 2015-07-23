@@ -29,3 +29,18 @@ Attribute       | Options                   | Default             | Description
 ---             | ---                       | ---                 | ---
 `url`           | *string*                  | `undefined`         | WebSocket server endpoint to connect to.
 `protocol`      | *string*                  | `undefined`         | A subset protocol to be used as part of the communication with the server.
+
+## Methods
+
+Method        | Parameters   | Returns     | Description
+---           | ---          | ---         | ---
+`send()`   | message String       |     | Used to send messages to the server.
+`close()`   | None      |     | Close socket.
+
+## Events
+
+Event         | Description
+---           | ---
+`onmessage` | Triggers when a message from the server is received.
+`onerror` | Triggers when there is an error triggered by WebSocket client
+`onopen` | Triggers when a socket is first open
