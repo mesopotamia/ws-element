@@ -1,0 +1,19 @@
+{
+  "name": "ws-element",
+  "version": "0.1.0",
+  "authors": [
+    "Marwan Aziz <aziz.marwan@gmail.com>"
+  ],
+  "description": "Polymer custom element that facilitates websockets",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1"
+  }
+}
